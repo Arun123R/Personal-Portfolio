@@ -124,7 +124,7 @@ nav .left {
  }
 
  .educationSection {
-     padding-top: 100px 80px;
+     padding: 100px 80px;
      font-family: 'Poppins', sans-serif;
      background-color: #05012a;
      color: white;
@@ -337,3 +337,115 @@ nav .left {
          padding: 20px;
      }
  }
+ /* 🌐 Full mobile responsiveness below 768px */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 10px;
+    }
+
+     nav ul li:hover{
+        font-weight: bolder;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 20px 20px;
+    }
+
+    .firstSection > div {
+        width: 100%;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+        margin: 80px 0;
+    }
+
+    .righttSection img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .leftSection .btn {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+        font-size: 1rem;
+    }
+
+    .about-container {
+        padding: 80px 20px 40px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .about-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    .about-img img {
+        width: 180px;
+    }
+
+    .educationSection {
+        padding: 80px 20px 40px;
+    }
+
+    .education-card {
+        padding: 20px;
+    }
+
+    .edu-logo {
+        width: 70px;
+        top: 10px;
+        right: 10px;
+        opacity: .5;
+        height: auto;
+        position: relative;
+    }
+
+    .contact-container {
+        margin: 20px;
+        padding: 40px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
