@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#educationSection">Education</a></li>
+                    <li><a href="education.html">Education</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="contact.html">Contact me</a></li>
                 </ul>
@@ -34,9 +34,10 @@
                 <div>and I am a <div><span id="element"></span></div>
                 </div>
                 <div class="button">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn"> Visit Github</button>
+                    <button class="btn" id="downloadBtn" >Download Resume</button>
+                    <button class="btn" onclick="window.open('https://github.com/Arun123R', '_blank')"> Visit Github</button>
                 </div>
+
 
             </div>
 
@@ -67,7 +68,7 @@
         </section>
         <hr>
 
-        <section id="educationSection">
+        <section class="educationSection">
             <h2>Education</h2>
 
             <div class="education-card">
@@ -145,12 +146,22 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer.', '&amp; Fast Learner', '&amp; Web Designer'],
-            typeSpeed: 100,
-        });
-    </script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer.', '&amp; Fast Learner', '&amp; Web Designer'],
+        typeSpeed: 100,
+    });
+
+            
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'Arun Kumar new resume.pdf';  // path to your resume file
+    link.download = 'Arun Kumar new resume.pdf';  // the file name for saving
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    });
+</script>
 </body>
 
 </html>

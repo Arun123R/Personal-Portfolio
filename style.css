@@ -123,14 +123,15 @@ nav .left {
      margin: 40px 80px;
  }
 
- #educationSection {
-     padding: 40px 80px;
+ .educationSection {
+     padding-top: 100px 80px;
      font-family: 'Poppins', sans-serif;
      background-color: #05012a;
      color: white;
+     margin-top: 70px;
  }
 
- #educationSection h2 {
+ .educationSection h2 {
      font-size: 2.5rem;
      color: #d590f5;
      /* light purple */
@@ -189,7 +190,7 @@ nav .left {
  /*second*/
  
  .about-container {
-     padding: 60px 80px;
+     padding: 100px 80px;
  }
 
  .about-container h2 {
@@ -267,7 +268,7 @@ nav .left {
  .contact-container {
      max-width: 800px;
      margin: 50px auto;
-     padding: 30px;
+     padding: 100px 80px;
      background-color: #0f0660;
      border-radius: 10px;
      box-shadow: 0 0 20px rgba(213, 144, 245, 0.2);
@@ -313,7 +314,7 @@ nav .left {
      background-color: #0f0660;
      color: #aaa;
      margin-top: 40px;
-     height: 200px;
+     height: 200px; 
  }
 
  .footer {
