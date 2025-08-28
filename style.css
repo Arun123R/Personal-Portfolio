@@ -415,7 +415,17 @@ nav .left {
     }
 
     .education-card {
-        padding: 20px;
+        position: relative;
+        margin-bottom: 20px;
+        border-left: 4px solid #d590f5;
+        border-radius: 10px;
+        transition: transform;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+         overflow: hidden;
+
     }
 
     .edu-logo {
@@ -425,6 +435,7 @@ nav .left {
         opacity: .5;
         height: auto;
         position: relative;
+        margin-bottom: 20px;
     }
 
     .contact-container {
